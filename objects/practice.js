@@ -10,35 +10,56 @@
 
 /*
   Create an object called me.
-  Give it a key of name with the value being your name, and another key of age with the value being your age.
+  Give it a key of name with the value being your name, and another key of age with the 
+  value being your age.
   Then alert your name using dot notation.
 */
 
 //Code here
+const me = {
+  name: "Josh",
+  age: 29
+}
 
+alert("name")
 ////////// PROBLEM 2 //////////
 
 /*
-  Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
-  Have the values to those keys be strings that are equal to your favorite thing in that category.
+  Make a 'favoriteThings' object that contains the following 
+  keys: band, food, person, book, movie, holiday.
+  Have the values to those keys be strings 
+  that are equal to your favorite thing in that category.
 */
 
 //Code here
-
+let favoriteThings = {
+  band: "daft punk",
+  food: "steak",
+  person: "wife",
+  book: "The Silmarillion",
+  movie: "The Count of Monte Cristo",
+  holiday: "Christmas"
+}
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
-  and then another key named 'brand' with the value being your favorite brand.
+  After you've made your object, use bracket or dot notation to add another key named 'car' 
+  with the value being your favorite car
+  and then another key named 'brand' 
+  with the value being your favorite brand.
 */
 
 //Code here
-
+favoriteThings.car = "Bug"
+favoriteThings.brand = "Nike"
 /*
-  Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
-  and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+  Now use bracket or dot notation to change the value of the food key in your favoriteThings
+  object to be 'Chicken Nuggets'
+  and change the value of the book key in your favoriteThings object 
+  to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 ////////// PROBLEM 3 //////////
 
 /*
@@ -46,17 +67,26 @@
   Now, create a variable called item and set it equal to the string 'firstPocket'.
   Using bracket notation and the item variable, add a 'firstPocket' key (or property) to backPack.
   Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
+  Using dot notation, add another key (or property) to your backPack object that is named color,
+  with the value being the color of your backpack.
 */
 
 //Code here
+let backPack = {
+  
+}
+
+let item = "firstPocket"
+
+backPack[item] = "chapstick"
+backPack.color = "black"
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+alert(backPack)
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -64,10 +94,10 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 ////////// PROBLEM 4 //////////
 
-// Do not edit the code below.
+//? Do not edit the code below.
 var user2 = {
   name: 'Bryan',
   age: 24,
@@ -76,16 +106,18 @@ var user2 = {
   birthday: '05/02/1990',
   username: 'bryansmith33'
 };
-// Do not edit the code above.
+//? Do not edit the code above.
 
 /*
   Let's say I, the user, decided to change my name and email address to the following:
-  name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
+  name -> 'Bryan G. Smith' and 
+  email -> 'bryan.smith@devmounta.in'.
   Make that change without modifying the original object code above.
 */
 
 //Code Here
-
+user2.name = "Bryan G. Smith"
+user2.email = "bryan.smith@devmounta.in"
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
