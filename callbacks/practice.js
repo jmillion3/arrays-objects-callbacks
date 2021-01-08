@@ -23,11 +23,27 @@
 ////////// PROBLEM 1 //////////
 
 /*
-  Write a function called first that takes in two parameters, an array and a callback function.
-  Then invoke the callback function, passing in the first element in the array as it's argument.
+  Write a function called first 
+  that takes in two parameters, an array 
+  and a callback function.
+  Then invoke the callback function, 
+  passing in the first element in the array as it's argument.
 */
 
 // Code Here 
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function cbFirst(){
+  return names[0]
+}
+
+
+function first(cb){
+  return cb()
+}
+
+// let firstName = 
+first(cbFirst)
 
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -43,11 +59,26 @@ first(names, function(firstName){
 ////////// PROBLEM 2 //////////
 
 /*
-  Write a function called last that takes in an array and a callback function. 
-  Then invoke the callback, passing in the last element in the array as the argument.
+  Write a function called last 
+  that takes in an array 
+  and a callback function. 
+  Then invoke the callback, 
+  passing in the last element in the array as the argument.
 */
 
 //Code Here
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
+function cbLast(){
+  return names[6]
+}
+
+function last(cb){
+  return cb()
+}
+
+// let lastName =
+last(cbLast)
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -61,12 +92,23 @@ last(names, function(lastName){
 ////////// PROBLEM 3 //////////
 
 /*
-  Write a function called multiply that takes in three parameters: two numbers and a callback function.  
-  Invoke the callback, passing in the product of the two numbers multiplied as the argument. 
+  Write a function called multiply 
+  that takes in three parameters: 
+  two numbers and a callback function.  
+  Invoke the callback, 
+  passing in the product of the two numbers multiplied as the argument. 
 */
 
 //Code Here
+function numbers(num1, num2){
+  return num1 * num2
+}
 
+function multiply(cb, num1, num2){
+  return cb(num1, num2)
+}
+
+multiply(numbers, 4, 3)
 // Do not edit the code below.
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
