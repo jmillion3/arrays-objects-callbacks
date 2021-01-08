@@ -120,14 +120,20 @@ multiply(4, 3, function(answer){
 ////////// PROBLEM 4 //////////
 
 /*
-  Write a function called contains that takes in three parameters: an array, a name and a callback.  
+  Write a function called contains 
+  that takes in three parameters: 
+  an array, 
+  a name 
+  and a callback.  
   Check if the name exists in the array. 
   If it does, invoke the callback with true as the argument. 
   If the name does not exist, invoke the callback with false as the argument.
 */
 
 //Code Here 
+function contains(){
 
+}
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
   if(result === true){
